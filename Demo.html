@@ -1,0 +1,75 @@
+<html>
+<head>
+    <body>
+        Enter a number:<input type=" text" id="t1" /><br />
+        Enter a number:<input type=" text" id="t2" /><br />
+        Rgesult:<input type="text" id="t3" /><br />
+        <input type="button" value="Addtion" onclick="addtion()" />
+        <input type="button" value="sub" onclick="sub()" />
+        <input type="button" value=" multiplication" onclick=" multiplication()" />
+        <input type="button" value=" division" onclick=" division()" /></br>
+        <input type="button" value="pay" onclick="pay()" /></br>
+
+
+        <b id="b1"></b>
+        <script>
+            function addtion() {
+                var n1 = document.getElementById("t1").value;
+                var n2 = document.getElementById("t2").value;
+                var sum = parseInt(n1) + parseInt(n2);
+                document.getElementById("t3").value = sum;
+                document.getElementById("b1").innerHTML = "Addtion is :" + sum;
+
+            }
+            function sub() {
+                var num1 = document.getElementById("t1").value;
+                var num2 = document.getElementById("t2").value;
+                var s = parseInt(num1) - parseInt(num2);
+                document.getElementById("t3").value = s;
+                document.getElementById("b1").innerHTML = "sub is :" + s;
+                alert(" sub is" + s);
+
+            }
+            function multiplication()
+            {
+                var num1 = document.getElementById("t1").value;
+                var num2 = document.getElementById("t2").value;
+                var mul = parseInt(num1)*parseInt(num2);
+                document.getElementById("t3").value = mul;
+                document.getElementById("b1").innerHTML = "multiplication is : " + mul;
+
+
+            }
+            function division()
+            {
+                var num1 = document.getElementById("t1").value;
+                var num2 = document.getElementById("t2").value;
+                var div = parseInt(num1) /parseInt(num2);
+                document.getElementById("t3").value = div;
+                document.getElementById("b1").innerHTML = "division is :" + div;
+
+
+            }
+            function pay()
+            {
+                var result = confirm("Do you wanto to make payment ?");
+
+                if (result == true)
+                {
+
+                    alert("payment done successfully");
+
+                }
+
+                else
+                {
+
+                    alert("Payment cancelled");
+
+                }
+
+            }
+        </script>
+    </body>
+</head>
+</html>

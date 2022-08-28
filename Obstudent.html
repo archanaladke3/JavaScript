@@ -1,0 +1,36 @@
+<html>
+<body>
+    <div id="s1"></div>
+    <script>
+
+        var student =
+        {
+            sid: 101,
+            sname: "shweta",
+            math: 75,
+            phy: 90,
+            chem : 67,
+
+            display: function ()
+            {
+                return "sid=" + this.sid+ " sname=" + this.sname+ " math=" + this.math+" phy=" + this.phy + " chem=" + this.chem;
+            },
+            avg: function()
+            {
+
+                var sum = (phy + chem + math);
+                var a = sum / 3;
+                return a;
+
+            }
+         
+
+        }
+
+        document.getElementById("s1").innerHTML = student.avg();
+
+
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<body>
+    <script>
+        var text = "this is javaScript";
+        var text1 = "green ,red ,purple, white";
+        document.write(text.length);
+        var s = "hello world";
+        var s1 = " test pupose";
+        document.write("<br>");
+        var rs = text.concat(" " + s);
+        document.write("<br>");
+        var result = s.concat(" ", text, " ", s1);
+        document.write(result);
+        document.write(rs);
+
+
+       document.write("<br/>" + text.toUpperCase());
+
+       document.write("<br/>" + s.toLowerCase());
+
+
+      
+
+        // indexof('b') , lastindexof('b')
+
+        
+        var res = text.slice(2,6);
+
+        document.write(res);
+        var res1 = text.indexOf('i');
+        var res2 = text.lastIndexOf('i');
+        document.write("<br>"+res1);
+        document.write("<br>"+res2);
+
+
+        var result1 = text1.split(",");
+        document.write("<br>" + result1);
+        var res3 = "Archana";
+        var res4 = res3.replace(res3, "priti");
+        document.write("<br>"+res4);
+    </script>
+</body>
+</html>
